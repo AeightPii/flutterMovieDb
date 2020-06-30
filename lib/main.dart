@@ -59,27 +59,31 @@ class HomePageState extends State<HomePage> {
               },
               child: Hero(
                 tag: res.posterPath,
+                
                 child: Card(
                 
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       Container(
                         
-                        height: 150,
+                        height: 120.0,
                         child:Image.network("https://image.tmdb.org/t/p/w200${res.posterPath}",
-                        fit: BoxFit.fill
+                        //fit: BoxFit.fill
                         ),
                       ),
                       Text(
                         res.title,
                         style: TextStyle(
                           fontSize: 12.0,
-                          fontWeight: FontWeight.bold
+                          fontWeight: FontWeight.bold,
+                          
                         ),
                       )
                     ],
                   ),
                 ),
+                  
                 ),
             ),
             )
