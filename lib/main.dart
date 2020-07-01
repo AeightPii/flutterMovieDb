@@ -31,6 +31,9 @@ class HomePageState extends State<HomePage> {
     var data = await http.get(url);
     var jsonData = jsonDecode(data.body);
     moviedb = Moviedb.fromJson(jsonData);
+    setState(() {
+      
+    });
   }
 
   @override
